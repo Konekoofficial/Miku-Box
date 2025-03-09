@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:layout="@layout/uwu_banner"
+        android:selectable="false" />
+    <EditTextPreference
+        android:layout="@layout/uwu_banner_bottom"
+        app:icon="@drawable/ic_social_emoji_symbols"
+        app:key="profileName"
+        app:title="@string/profile_name"
+        app:useSimpleSummaryProvider="true" />
+    <PreferenceCategory
+        app:title="@string/proxy_cat">
+        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+            android:layout="@layout/uwu_top"
+            app:defaultValue="2"
+            app:entries="@array/socks_versions"
+            app:entryValues="@array/int_array_3"
+            app:icon="@drawable/ic_baseline_nfc_24"
+            app:key="serverProtocol"
+            app:title="@string/app_version"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout="@layout/uwu_mid"
+            app:icon="@drawable/ic_hardware_router"
+            app:key="serverAddress"
+            app:title="@string/server_address"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout="@layout/uwu_mid"
+            app:icon="@drawable/ic_maps_directions_boat"
+            app:key="serverPort"
+            app:title="@string/server_port"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout="@layout/uwu_mid"
+            app:icon="@drawable/ic_baseline_person_24"
+            app:key="serverUsername"
+            app:title="@string/username_opt"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout="@layout/uwu_bot"
+            app:dialogLayout="@layout/layout_password_dialog"
+            app:icon="@drawable/ic_settings_password"
+            app:key="serverPassword"
+            app:title="@string/password_opt" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:title="sing-box server">
+        <SwitchPreference
+            android:layout="@layout/uwu_sin_switch"
+            android:widgetLayout="@layout/uwu_switch"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off"
+            app:icon="@drawable/ic_alpha_u_circle_outline"
+            app:key="sUoT"
+            app:title="UDP over TCP" />
+    </PreferenceCategory>
+</PreferenceScreen>

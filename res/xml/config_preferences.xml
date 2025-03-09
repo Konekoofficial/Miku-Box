@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:layout="@layout/uwu_banner"
+        android:selectable="false" />
+    <EditTextPreference
+        android:layout="@layout/uwu_banner_bottom"
+        app:icon="@drawable/ic_social_emoji_symbols"
+        app:key="profileName"
+        app:title="@string/profile_name"
+        app:useSimpleSummaryProvider="true" />
+    <PreferenceCategory
+        app:title="General settings">
+        <SwitchPreference
+            android:layout="@layout/uwu_top_switch"
+            android:widgetLayout="@layout/uwu_switch"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off"
+            app:icon="@drawable/ic_baseline_import_contacts_24"
+            app:key="isOutboundOnly"
+            app:title="@string/is_outbound_only" />
+        <moe.matsuri.nb4a.ui.EditConfigPreference
+            android:layout="@layout/uwu_bot"
+            app:icon="@drawable/ic_baseline_layers_24"
+            app:key="serverConfig"
+            app:title="@string/custom_config"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

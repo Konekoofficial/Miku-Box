@@ -1,0 +1,41 @@
+{
+  "apkFileName": "NekoBox_v1.3.8(210)_src.apk",
+  "PackageInfo": {
+    "forcedPackageId": "127",
+    "renameManifestPackage": null
+  },
+  "doNotCompress": [
+    "resources.arsc",
+    "png",
+    "mp3",
+    "res/raw-zh-rCN/insecure.txt",
+    "res/raw-zh-rCN/not_encrypted.txt",
+    "res/raw-zh-rCN/shadowsocks_stream_cipher.txt",
+    "assets/dexopt/baseline.prof",
+    "assets/dexopt/baseline.profm"
+  ],
+  "compressionType": false,
+  "sparseResources": false,
+  "version": "2.4.0-250308",
+  "sharedLibrary": false,
+  "VersionInfo": {
+    "versionName": "1.3.8",
+    "versionCode": "210"
+  },
+  "UsesFramework": {
+    "ids": [1],
+    "tag": null
+  },
+  "unknownFiles": {
+    "kotlin-tooling-metadata.json": "8",
+    "META-INF/version-control-info.textproto": "8",
+    "META-INF/com/android/build/gradle/app-metadata.properties": "8"
+  },
+  "apkFilePath": "/data/app/~~azKY6bYhg7kt3c22fkvSwA==/moe.nb4a-84jWNs5w5t9Vxopl5vx11A==/base.apk",
+  "compactEntries": false,
+  "isFrameworkApk": false,
+  "sdkInfo": {
+    "minSdkVersion": "21",
+    "targetSdkVersion": "35"
+  }
+}

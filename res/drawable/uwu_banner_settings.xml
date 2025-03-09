@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@android:color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="250.0dip"
+    android:layout_marginTop="16.0dip"
+    android:layout_marginBottom="6.0dip"
+    android:minHeight="?android:listPreferredItemHeightSmall"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="250.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        app:cardBackgroundColor="?colorCard"
+        app:cardCornerRadius="24.0dip"
+        app:cardElevation="0.0dip">
+        <ImageView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/uwu_addon_logo"
+            android:adjustViewBounds="true"
+            android:tint="?colorPrimary" />
+        <ImageView
+            android:layout_gravity="end|bottom|center"
+            android:layout_width="210.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:src="@drawable/uwu_banner_image_2"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="-40.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20.0dip">
+            <TextView
+                android:textSize="17.0sp"
+                android:textColor="?android:textColorSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello there..."
+                android:includeFontPadding="false" />
+            <TextView
+                android:textSize="24.0sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="Welcome to the settings menu, please select whichever option you need."
+                android:includeFontPadding="false"
+                android:layout_marginEnd="100.0dip" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
